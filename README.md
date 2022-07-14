@@ -40,7 +40,7 @@
 
 ### 2.1 正则化
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-1-1.png" width="700" alt="图3. 正则化方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/fairness_survey_figs-1-1.png" width="700" alt="图3. 正则化方法的基本框架"/></div>
 
 对于有目标函数的图数据挖掘问题，为目标函数设计一个正则项来实现更优的公平性是一个常见的提升算法公平性方法。该方法在诸多图数据挖掘算法以及与图数据相关的应用场景中均取得了良好的效果。我们在综述中详细介绍了正则化如何被用于提升集体公平性，个人公平性，反事实公平性。我们还介绍了在推荐系统和知识图谱场景中，正则化如何被应用以提升算法公平性。
 
