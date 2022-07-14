@@ -12,7 +12,7 @@
 
 ## 1. 图数据挖掘中算法公平性的定义
 
-<div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/taxonomy-1-4-renew-1.png" width="700" alt="图1. 图数据挖掘中算法公平性的定义分类"/></div>
+<div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/taxonomy-1-4-renew-1.png" width="700" alt="图1. 图数据挖掘中算法公平性的定义分类"/></div>图1. 图数据挖掘中算法公平性的定义分类
 
 ### 1.1 集体公平性
 在一些围绕人（如电子商务平台的用户）的图数据挖掘场景中，数据中的信息可能会包含人的敏感特征（sensitive attributes），比如性别[3]。在这种情况下，现有的图数据挖掘算法可能会产生带有取决于敏感特征的有偏见的预测。在图数据挖掘领域，集体公平性大致要求算法不应在预测结果中展现出敏感特征上的偏见。常见的集体公平性的定义包括人口平等（Demographic Parity），几率平等（Equality of Odds），机会平等（Equality of Opportunity）。此外，还有一些集体公平性的定义是与具体的图数据挖掘算法耦合的。比如，在节点表示学习，图聚类和影响力最大化算法中，图数据挖掘算法的集体公平性都有不同的定义。更多内容见综述原文。
