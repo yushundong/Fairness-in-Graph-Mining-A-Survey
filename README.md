@@ -12,7 +12,7 @@
 
 ## 1. 图数据挖掘中算法公平性的定义
 
-<div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/taxonomy-1-4-renew.pdf" width="700" alt="图1. 图数据挖掘中算法公平性的定义分类"/></div>
+<div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/taxonomy-1-4-renew-1.png" width="700" alt="图1. 图数据挖掘中算法公平性的定义分类"/></div>
 
 ### 1.1 集体公平性
 在一些围绕人（如电子商务平台的用户）的图数据挖掘场景中，数据中的信息可能会包含人的敏感特征（sensitive attributes），比如性别[3]。在这种情况下，现有的图数据挖掘算法可能会产生带有取决于敏感特征的有偏见的预测。在图数据挖掘领域，集体公平性大致要求算法不应在预测结果中展现出敏感特征上的偏见。常见的集体公平性的定义包括人口平等（Demographic Parity），几率平等（Equality of Odds），机会平等（Equality of Opportunity）。此外，还有一些集体公平性的定义是与具体的图数据挖掘算法耦合的。比如，在节点表示学习，图聚类和影响力最大化算法中，图数据挖掘算法的集体公平性都有不同的定义。更多内容见综述原文。
@@ -34,45 +34,45 @@
 
 ## 2. 提升图数据挖掘算法公平性的方法
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/techniques-2.pdf" width="700" alt="图2. 图数据挖掘中提升算法公平性的方法分类"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/techniques-2-1.png" width="700" alt="图2. 图数据挖掘中提升算法公平性的方法分类"/></div>
 
 
 ### 2.1 正则化
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-1.pdf" width="700" alt="图3. 正则化方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-1-1.png" width="700" alt="图3. 正则化方法的基本框架"/></div>
 
 对于有目标函数的图数据挖掘问题，为目标函数设计一个正则项来实现更优的公平性是一个常见的提升算法公平性方法。该方法在诸多图数据挖掘算法以及与图数据相关的应用场景中均取得了良好的效果。我们在综述中详细介绍了正则化如何被用于提升集体公平性，个人公平性，反事实公平性。我们还介绍了在推荐系统和知识图谱场景中，正则化如何被应用以提升算法公平性。
 
 ### 2.2 约束优化
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-2-1.pdf" width="700" alt="图4. 约束优化方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-2-1-1.png" width="700" alt="图4. 约束优化方法的基本框架"/></div>
 
 很多图数据挖掘算法是基于优化问题来的。对于这类算法，针对优化设计特殊的约束条件以实现算法公平性也是一个常用的方法。比如，在图谱聚类算法中，[5]要求图谱聚类算法的结果应该满足：每一个聚类中个体数量在全体中的占比应该与从属于任意集体的成员在本聚类中数量的比例相近。我们在综述中详细介绍了约束优化如何被用于提升集体公平性和个人公平性。
 
 ### 2.3 再平衡
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-3.pdf" width="700" alt="图5. 再平衡方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-3-1.png" width="700" alt="图5. 再平衡方法的基本框架"/></div>
 
 
 再平衡也是一种图数据挖掘中实现算法公平性的常用方法。一般情况下，再平衡可以通过人为修正一些算法过程中存在的概率分布来实现更为公平的算法结果。比如，随机游走算法（random walk）学到的节点表示常常是有偏见的，其中一个原因是拥有某些特定敏感特征的人可能在网络中占据了大部分节点的位置。可以预见，这将导致随机游走算法在运行的大部分时间步（time step）都停留在拥有这些敏感特征的人所占据的节点位置上。这种问题所导致的偏见就可以被再平衡策略很好的处理，比如Fairwalk [6]和Crosswalk [7]。我们在综述中详细介绍了再平衡如何被用于提升集体公平性和度公平性。同时，我们也介绍了再平衡如何被应用于推荐系统场景中来提高算法公平性。
 
 ### 2.4 对抗学习
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-4-2.pdf" width="700" alt="图6. 对抗学习方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-4-2-1.png" width="700" alt="图6. 对抗学习方法的基本框架"/></div>
 
 
 对抗学习是应用非常广泛的提升图学习算法集体公平性的方法。这种方法大致要求即使通过学习，经过特定设计的神经网络模型也无法基于某些输出（比如节点表示和预测结果）准确预测个体所属的集体，也就是他们的敏感特征。在这种情况下，这些输出就被认为是与敏感特征相互解耦的。[1]和[3]都属于这类方法。我们在综述中详细介绍了再平衡如何被用于提升集体公平性，以及这种方法在知识图谱中的应用。
 
 ### 2.5 链接修正
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-5.pdf" width="700" alt="图7. 链接修正方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-5-1.png" width="700" alt="图7. 链接修正方法的基本框架"/></div>
 
 
 现有研究已经证明，算法的输入图数据本身就可能是包含偏见的，而这种偏见可能被图数据挖掘算法在预测结果中进一步放大。因此，直接修改图数据以减少数据本身包含的偏见成为了提高算法公平性的重要方法，其中又以修改图数据的链接（link）应用最为广泛。在本篇综述中，我们详细介绍了链接修正如何被用于提升集体公平性和个人公平性。我们也介绍了这种方法在推荐系统中的应用。
 
 ### 2.6 正交投影
 
-<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-6.pdf" width="700" alt="图8. 正交投影方法的基本框架"/></div>
+<div align=center><img src="https://github.com/yushundong/Graph-Mining-Fairness-Data/blob/main/survey_images/fairness_survey_figs-6-1.png" width="700" alt="图8. 正交投影方法的基本框架"/></div>
 
 正交投影方法的基本理念是：如果能找到一个与偏见正交的超平面，那么只需要保证图数据挖掘算法的输出始终处在这个超平面内，就可以在理论上保证输出与偏见线性不相关。在本篇综述中，有关正交投影的介绍主要围绕节点表示学习展开：我们详细介绍了正交投影如何被用于提升节点表示学习算法的集体公平性。
 
