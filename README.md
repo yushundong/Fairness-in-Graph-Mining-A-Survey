@@ -13,6 +13,7 @@
 ## 1. 图数据挖掘中算法公平性的定义
 
 <div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/taxonomy-1-4-renew-1.png" width="700" alt="图1. 图数据挖掘中算法公平性的定义分类"/></div>
+
 <center>图1. 图数据挖掘中算法公平性的定义分类</center>
 
 ### 1.1 集体公平性
