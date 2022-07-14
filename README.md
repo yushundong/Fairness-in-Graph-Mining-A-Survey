@@ -35,6 +35,7 @@
 
 ## 2. 提升图数据挖掘算法公平性的方法
 
+在本篇综述中，我们将图数据挖掘中实现算法公平性的方法划分为以下六类。
 <div align=center><img src="https://github.com/yushundong/Fairness-in-Graph-Mining-A-Survey/blob/main/survey_images/techniques-2-1.png" width="700" alt="图2. 图数据挖掘中提升算法公平性的方法分类"/></div>
 
 
